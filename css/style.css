@@ -12,7 +12,6 @@
 
     /* Debug */
     min-height: 100px;
-    background-color: purple;
 }
 
 h2 {
@@ -23,8 +22,9 @@ h3 {
     margin: 20px auto;
 }
 
-nav {
-    background-color: yellow;
+.fa-solid.fa-bars {
+    color: #ffff;
+    font-size: 2rem;
 }
 
 .even {
@@ -61,7 +61,7 @@ header .container{
     min-height: 250px;    
 }
 section {
-    margin: 50px auto;
+    margin-top: 50px;
     padding: 20px 0;
 }
 
@@ -147,6 +147,62 @@ section {
     color: #9e9e9e;
 }
 
+
+/* Sezione Benefits */
+
+#secinfo .col:last-child {
+    color: #9792e4;
+}
+
+#secinfo .col:last-child a{
+    padding: 10px 20px;
+}
+
+
+/* Sezione get started */
+
+.end .container {
+    text-align: center;
+    color: #ffff;
+}
+
+.end .container a {
+    display: block;
+    max-width: 75%;
+    margin: 15px auto;
+    padding: 10px 50px;
+    background-color: #ffff;
+    border-radius: 30px;
+    color: #0084fd;
+    text-decoration: none;
+}
+
+.end span:first-child {
+    color: #b6b1f6;
+}
+
+.end h2 {
+    margin-top: 15px;
+    color: #ffff;
+}
+
+.end h1 {
+    margin: 20px auto;
+    color: #fdc15f;
+}
+
+/* Regole Footer */
+
+footer .container {
+    color: #ffff;
+    text-align: center;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+footer p {
+    margin-bottom: 40px;
+}
 
 /* MEDIA QUERY */
 /* Tablet */

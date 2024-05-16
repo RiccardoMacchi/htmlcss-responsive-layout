@@ -20,6 +20,14 @@ nav {
     width: 50%;
 }
 
+.even {
+    background-color: #9792e4;
+}
+
+footer {
+    background-color: #333333;
+}
+
 /* Regole header */
 
 

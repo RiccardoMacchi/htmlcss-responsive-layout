@@ -5,3 +5,41 @@
     padding: 0;
     box-sizing: border-box;
 }
+
+.container {
+    margin: 0 auto;
+    width: 90%;
+
+    /* Debug */
+    min-height: 100px;
+    background-color: purple;
+}
+
+nav {
+    background-color: yellow;
+    width: 50%;
+}
+
+/* Regole header */
+
+
+header {
+    background-color: #0084fd;
+}
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+/* Regole main */
+/* Regole sezione funzioni */
+
+.col {
+    margin-bottom: 20px;
+    /* Debug */
+    min-height: 250px;
+    background-color: bisque;
+}

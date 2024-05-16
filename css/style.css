@@ -65,7 +65,6 @@ header .container{
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
-        /* gap: 10px; */
     }
 
     #funcion .col {
@@ -81,4 +80,24 @@ header .container{
         width: calc(100% / 2 - 10px);
     }
 
+}
+
+@media all and (min-width:1024px){
+    .container {
+        width: 75%;
+    }
+
+    .strategic .container {
+        display: flex;
+        justify-content: space-around;
+        align-items: flex-end;
+    }
+
+    .strategic .col {
+        width: calc(100% / 2 - 60px);
+    }
+
+    .benefit .col {
+        width: calc(100% / 3 - 10px);
+    }
 }

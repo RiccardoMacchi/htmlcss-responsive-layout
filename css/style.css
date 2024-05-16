@@ -17,7 +17,6 @@
 
 nav {
     background-color: yellow;
-    width: 50%;
 }
 
 .even {
@@ -50,4 +49,36 @@ header .container{
     /* Debug */
     min-height: 250px;
     background-color: bisque;
+}
+
+
+
+
+/* MEDIA QUERY */
+/* Tablet */
+
+@media all and (min-width:768px) {
+
+    #secinfo .container,
+    .benefit .container,
+    #funcion .container {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        /* gap: 10px; */
+    }
+
+    #funcion .col {
+        width: calc((100% / 3) - 10px);
+    }
+
+    #funcion .col:first-child {
+        width: calc((((100% / 3) - 10px) * 2) + 15px);
+    }
+
+    #secinfo .col,
+    .benefit .col {
+        width: calc(100% / 2 - 10px);
+    }
+
 }

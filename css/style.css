@@ -15,6 +15,10 @@
     background-color: purple;
 }
 
+h2 {
+    color: #0084fd;
+}
+
 nav {
     background-color: yellow;
 }
@@ -25,6 +29,10 @@ nav {
 
 footer {
     background-color: #333333;
+}
+
+img {
+    width: 100%;
 }
 
 /* Regole header */
@@ -40,18 +48,67 @@ header .container{
     align-items: center;
 }
 
+section {
+    margin: 50px auto;
+    padding: 20px 0;
+}
+
 
 /* Regole main */
 /* Regole sezione funzioni */
 
 .col {
     margin-bottom: 20px;
+    padding: 20px 20px 0;
+    background-color: #b5ddff;
+    border-radius: 20px;
     /* Debug */
-    min-height: 250px;
-    background-color: bisque;
+    min-height: 250px;    
 }
 
 
+#funcion .col {
+    text-align: center;
+}
+
+#funcion .col:first-child {
+    text-align: left;
+}
+
+.col a {
+    display: inline-block;
+    margin: 15px auto;
+    padding: 15px 40px;
+    background-color: #0084fd;
+    border-radius: 30px;
+    color: #ffff;
+    text-decoration: none;
+}
+
+.col p {
+    margin: 20px auto;
+} 
+
+/* Sezione strategic planning */
+
+.strategic .col:first-child {
+    background-color: #9792e4;
+    color: #ffff;
+}
+
+.strategic .col:last-child {
+    background-color: #ffff;
+    text-align: center;
+}
+
+.strategic .col a{
+    padding: 10px 14px;
+    border-radius: 100%;
+}
+
+.strategic h2 {
+    color: #ffff;
+}
 
 
 /* MEDIA QUERY */

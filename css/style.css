@@ -32,17 +32,20 @@ h3 {
     font-size: 2rem;
 }
 
-.fa-solid.fa-bars {
-    color: #ffff;
-    font-size: 2rem;
+
+.btstart {
+    display: block;
+    margin: 15px auto;
+    padding: 10px 50px;
+    background-color: #ffff;
+    border-radius: 30px;
+    color: #0084fd;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
 }
 
 .even {
     background-color: #9792e4;
-}
-
-footer {
-    background-color: #333333;
 }
 
 img {
@@ -90,6 +93,26 @@ header .container{
     display: flex;
     justify-content: space-between;
     align-items: center;
+}
+
+/* Regole menu nav */
+
+
+
+header ul li {
+    list-style: none;
+    display: none;
+}
+
+header li a{
+    list-style: none;
+    text-decoration: none;
+    color: white;
+}
+
+.fa-solid.fa-bars {
+    color: #ffff;
+    font-size: 2rem;
 }
 
 
@@ -257,16 +280,8 @@ header .container{
     color: #ffff;
 }
 
-.end .container a {
-    display: block;
+.end .btstrat {
     max-width: 85%;
-    margin: 15px auto;
-    padding: 10px 50px;
-    background-color: #ffff;
-    border-radius: 30px;
-    color: #0084fd;
-    text-decoration: none;
-    letter-spacing: 0.3rem;
 }
 
 .end span:first-child {
@@ -285,6 +300,10 @@ header .container{
 }
 
 /* Regole Footer */
+
+footer {
+    background-color: #333333;
+}
 
 footer .container {
     color: #ffff;
@@ -386,7 +405,15 @@ footer p {
     #funcion .container .col:first-child {
         display: flex;
         align-items: flex-end;
+    }
 
+    header ul li {
+        display: inline-block;
+        margin-right: 20px;
+    }
+
+    .fa-solid.fa-bars {
+        display: none;
     }
 
 }

@@ -4,6 +4,14 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: "PT Sans", sans-serif;
+    line-height: 160%;
+    font-size: 14px;
+}
+
+p,
+a {
+    font-size: 1.3rem;
 }
 
 .container {
@@ -16,10 +24,12 @@
 
 h2 {
     color: #0084fd;
+    font-size: 4rem;
 }
 
 h3 {
     margin: 20px auto;
+    font-size: 2rem;
 }
 
 .fa-solid.fa-bars {
@@ -39,6 +49,36 @@ img {
     width: 100%;
 }
 
+.col a {
+    display: inline-block;
+    margin-bottom: 30px;
+    padding: 10px 50px;
+    background-color: #0084fd;
+    border-radius: 30px;
+    color: #ffff;
+    text-decoration: none;
+    letter-spacing: 0.3rem;
+    font-weight: 600;
+}
+
+.col p {
+    margin: 20px auto;
+    padding-bottom: 40px;
+} 
+
+section {
+    margin-top: 50px;
+    padding: 20px 0;
+}
+
+.col {
+    margin-bottom: 20px;
+    padding: 20px 20px 0px 20px;
+    background-color: #ffff;
+    border-radius: 20px;
+    /* Debug */
+    min-height: 250px;    
+}
 /* Regole header */
 
 
@@ -52,24 +92,14 @@ header .container{
     align-items: center;
 }
 
-.col {
-    margin-bottom: 20px;
-    padding: 20px 20px;
-    background-color: #ffff;
-    border-radius: 20px;
-    /* Debug */
-    min-height: 250px;    
-}
-section {
-    margin-top: 50px;
-    padding: 20px 0;
-}
-
 
 /* Regole main */
 /* Regole sezione funzioni */
 
-
+.col h2 > i {
+    font-size: 5rem;
+    margin-bottom: 20px;
+}
 
 
 #funcion .col {
@@ -81,19 +111,16 @@ section {
     text-align: left;
 }
 
-.col a {
-    display: inline-block;
-    margin: 15px auto;
-    padding: 10px 50px;
-    background-color: #0084fd;
-    border-radius: 30px;
-    color: #ffff;
-    text-decoration: none;
+#funcion p {
+    font-weight: 600;
 }
 
-.col p {
-    margin: 20px auto;
-} 
+#funcion h2 {
+    font-size: 2rem;
+}
+
+
+
 
 /* Sezione strategic planning */
 
@@ -108,13 +135,22 @@ section {
 }
 
 .strategic .col a{
-    padding: 10px 14px;
+    padding: 10px 16px;
     border-radius: 100%;
+    color: black;
 }
 
+
 .strategic h2 {
+    font-size: 2.5rem;
     color: #ffff;
 }
+
+.strategic .col:last-child p{
+    font-style: oblique;
+}
+
+
 
 /* Sezione Testimonial */
 #testimonial .col {
@@ -124,40 +160,95 @@ section {
 #testimonial .col:not(:first-child) {
     background-color: #9792e4;
     color: #ffff;
+    padding: 20px;
+}
+
+
+.wrappertestimonial {
+    display: inline-block;
+    position: relative;
+    width: 200px;
+    height: 200px;
+    overflow: hidden;
+    border-radius: 50%;
 }
 
 #testimonial img {
-    /* border-radius: 50%; */
+    width: auto;
+    height: 100%;
+    margin-left: -50px;
 }
+
+#testimonial h3 {
+    font-weight: 500;
+}
+
+#testimonial h2 {
+    font-size: 2.7rem;
+}
+
 
 /* Sezione Benefits */
 
 .benefit h2 {
     text-align: center;
     color:  #ffff;
+    margin: 35px auto;
 }
 
 .benefit h1,
 .benefit h4 {
     margin-top: 20px;
     color: #9792e4;
+    
+}
+
+.benefit h1 {
+    font-size: 4rem;
+}
+
+.benefit h4 {
+    font-size: 2rem;
 }
 
 .benefit p {
     color: #9e9e9e;
 }
 
-
-/* Sezione Benefits */
+/* Sezione about us */
 
 #secinfo .col:last-child {
     color: #9792e4;
 }
 
-#secinfo .col:last-child a{
-    padding: 10px 20px;
+#secinfo .col:last-child{
+    position: relative;
 }
 
+#secinfo .col:last-child a{
+    padding: 10px 20px;
+    
+}
+
+.fa-solid.fa-quote-left {
+    position: absolute;
+    top: 0;
+    right: 25%;
+    font-size: 100px;
+}
+
+#secinfo img {
+    max-width: 75%;
+    border-radius: 50%;
+}
+
+#secinfo a {
+    letter-spacing: normal;
+}
+
+#secinfo p {
+    line-height: 200%;
+}
 
 /* Sezione get started */
 
@@ -168,13 +259,14 @@ section {
 
 .end .container a {
     display: block;
-    max-width: 75%;
+    max-width: 85%;
     margin: 15px auto;
     padding: 10px 50px;
     background-color: #ffff;
     border-radius: 30px;
     color: #0084fd;
     text-decoration: none;
+    letter-spacing: 0.3rem;
 }
 
 .end span:first-child {
@@ -189,6 +281,7 @@ section {
 .end h1 {
     margin: 20px auto;
     color: #fdc15f;
+    font-size: 4rem;
 }
 
 /* Regole Footer */
@@ -202,10 +295,11 @@ footer .container {
 
 footer p {
     margin-bottom: 40px;
+    font-size: 12px;
 }
 
 /* MEDIA QUERY */
-/* Tablet */
+/* Media Query Tablet */
 
 @media all and (min-width:768px) {
 
@@ -230,7 +324,38 @@ footer p {
         width: calc(100% / 2 - 10px);
     }
 
+    #testimonial .col:not(:first-child) {
+        text-align: left;
+        }
+    
+    .wrappertestimonial {
+        float: left;
+    }
+
+    #testimonial .col:not(:first-child) h3,
+    #testimonial .col:not(:first-child) p {
+        margin-left: 250px;
+    }
+
+    #secinfo .col:first-child {
+        width: 60%;
+    }
+
+    #secinfo .col:last-child {
+        width: 40%;
+    }
+    
+    .end .container a {
+        max-width: 50%;
+    }
+
+    .strategic h3 {
+        font-size: 2.5rem;
+    }
+
 }
+
+/* Media query Desktop */
 
 @media all and (min-width:1024px){
     .container {
@@ -250,4 +375,18 @@ footer p {
     .benefit .col {
         width: calc(100% / 3 - 10px);
     }
+    #secinfo .col:first-child {
+        width: 70%;
+    }
+
+    #secinfo .col:last-child {
+        width: 30%;
+    }
+
+    #funcion .container .col:first-child {
+        display: flex;
+        align-items: flex-end;
+
+    }
+
 }

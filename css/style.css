@@ -183,6 +183,11 @@ main section:first-child {
     color: black;
 }
 
+.strategic img {
+    width: 90%;
+    margin-left: 5%;
+}
+
 
 .strategic h2 {
     font-size: 2.5rem;
@@ -264,9 +269,6 @@ main section:first-child {
     color: #9792e4;
 }
 
-#secinfo .col:last-child{
-    position: relative;
-}
 
 #secinfo .col:last-child a{
     padding: 10px 20px;
@@ -275,14 +277,19 @@ main section:first-child {
 
 .fa-solid.fa-quote-left {
     position: absolute;
-    top: 0;
-    right: 25%;
-    font-size: 100px;
+    top: 2%;
+    right: 0%;
+    font-size: 70px;
 }
 
 #secinfo img {
-    max-width: 75%;
+    max-width: 100%;
     border-radius: 50%;
+}
+
+#wrapperimgabout {
+    max-width: 320px;
+    position: relative;
 }
 
 #secinfo a {
@@ -392,6 +399,15 @@ footer p {
         font-size: 2.5rem;
     }
 
+    .strategic .container {
+        align-items: flex-end;
+    }
+
+    .strategic .col:first-child img{
+        padding-top: 150px;
+        margin-bottom: 150px;
+    }
+
 
 }
 
@@ -436,5 +452,4 @@ footer p {
     .fa-solid.fa-bars {
         display: none;
     }
-
 }
